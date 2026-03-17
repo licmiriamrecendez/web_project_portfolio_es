@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "ArchivoBlack";
+  src:
+    url("fonts/ArchivoBlack-Regular.woff") format("woff"),
+    url("fonts/ArchivoBlack-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "OpenSans";
+  src:
+    url("fonts/OpenSans-Regular.woff") format("woff"),
+    url("fonts/OpenSans-Regular.woff2") format("woff2");
+}
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #1a1a2e, #0b0b12);
+  color: white;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-text {
+  max-width: 500px;
+  font-family: "ArchivoBlack";
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #cfcfcf;
+  font-family: "OpenSans";
+}
+
+/* BOTONES */
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.buttons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+
+  padding-bottom: 6px;
+
+  background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  background-position: 0 100%;
+}
+
+/* IMAGEN PERFIL */
+
+.hero-img img {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* SKILLS */
+
+.skills {
+  margin-bottom: 60px;
+}
+
+.skills-title {
+  font-family: "ArchivoBlack";
+  font-size: 40px;
+  margin-bottom: 20px;
+  width: 603px;
+  height: 44;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.skills-icons img {
+  width: 50px;
+}
+
+/* PROJECTS */
+
+.projects h2 {
+  width: 487px;
+  height: 44px;
+  margin-bottom: 20px;
+  font-family: "ArchivoBlack";
+  font-size: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #161623;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.card__skills {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+}
+
+.card__skills-2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+}
+
+.card h3 {
+  margin: 15px;
+  font-family: "ArchivoBlack";
+}
+
+.card p {
+  margin: 0 15px 20px;
+  color: #cfcfcf;
+  font-family: "OpenSans";
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: "ArchivoBlack";
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 180px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .buttons a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .icons img {
+    width: 30px;
+  }
+}
