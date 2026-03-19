@@ -1,14 +1,14 @@
 @font-face {
   font-family: "ArchivoBlack";
   src:
-    url("fonts/ArchivoBlack-Regular.woff") format("woff"),
-    url("fonts/ArchivoBlack-Regular.woff2") format("woff2");
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff"),
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "OpenSans";
   src:
-    url("fonts/OpenSans-Regular.woff") format("woff"),
-    url("fonts/OpenSans-Regular.woff2") format("woff2");
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
 }
 /* RESET */
 
